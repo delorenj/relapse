@@ -1,0 +1,17 @@
+[project]
+name = "relapse"
+version = "0.1.0"
+description = "A forensic tool for the chaotic good developer. It scans your file system, identifies 'benders' (clusters of file modifications separated by time gaps), and packages them up so you can shove them into an LLM to figure out what the hell you just did."
+readme = "README.md"
+authors = [
+    { name = "Jarad DeLorenzo", email = "jaradd@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+relapse = "relapse:main"
+
+[build-system]
+requires = ["uv_build>=0.9.7,<0.10.0"]
+build-backend = "uv_build"
